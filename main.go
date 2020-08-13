@@ -21,5 +21,5 @@ func main() {
     r := mux.NewRouter()
     r.HandleFunc("/", HealthCheckHandler)
 
-    log.Fatal(http.ListenAndServe("localhost:3000", r))
+    log.Fatal(http.ListenAndServe("localhost:8100", r))
 }
